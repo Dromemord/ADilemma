@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        saveListData = "{\"Positions\":[";
+        saveListData = "\"Positions\":[";
 
         characterController = GetComponent<CharacterController>();
         cam = Camera.main;
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
             }
 
 	    bTmp = (PlayerPrefs.GetInt("Right Click") == 1);
-	    
+
             if (rightClick || eClick || (bTmp && leftClick))
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
