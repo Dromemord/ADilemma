@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        GameManager.gameIsPaused = false;
         saveListData = "\"Positions\":[";
 
         characterController = GetComponent<CharacterController>();

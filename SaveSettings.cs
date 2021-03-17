@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Globalization;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -41,75 +42,75 @@ public class SaveSettings : MonoBehaviour
 	}
 
 	public void suivant1(){
-		PlayerPrefs.SetFloat("Q1", scr1.value);
+		PlayerPrefs.SetString("Q1", scr1.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant2(){
-		PlayerPrefs.SetFloat("Q2", scr2.value);
+		PlayerPrefs.SetString("Q2", scr2.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant3(){
-		PlayerPrefs.SetFloat("Q3", scr3.value);
+		PlayerPrefs.SetString("Q3", scr3.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant4(){
-		PlayerPrefs.SetFloat("Q4", scr4.value);
+		PlayerPrefs.SetString("Q4", scr4.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant5(){
-		PlayerPrefs.SetFloat("Q5", scr5.value);
+		PlayerPrefs.SetString("Q5", scr5.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant6(){
-		PlayerPrefs.SetFloat("Q6", scr6.value);
+		PlayerPrefs.SetString("Q6", scr6.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant7(){
-		PlayerPrefs.SetFloat("Q7", scr7.value);
+		PlayerPrefs.SetString("Q7", scr7.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant8(){
-		PlayerPrefs.SetFloat("Q8", scr8.value);
+		PlayerPrefs.SetString("Q8", scr8.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant9(){
-		PlayerPrefs.SetFloat("Q9", scr9.value);
+		PlayerPrefs.SetString("Q9", scr9.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant10(){
-		PlayerPrefs.SetFloat("Q10", scr10.value);
+		PlayerPrefs.SetString("Q10", scr10.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant11(){
-		PlayerPrefs.SetFloat("Q11", scr11.value);
+		PlayerPrefs.SetString("Q11", scr11.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant12(){
-		PlayerPrefs.SetFloat("Q12", scr12.value);
+		PlayerPrefs.SetString("Q12", scr12.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant13(){
-		PlayerPrefs.SetFloat("Q13", scr13.value);
+		PlayerPrefs.SetString("Q13", scr13.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant14(){
-		PlayerPrefs.SetFloat("Q14", scr14.value);
+		PlayerPrefs.SetString("Q14", scr14.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant15(){
-		PlayerPrefs.SetFloat("Q15", scr15.value);
+		PlayerPrefs.SetString("Q15", scr15.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant16(){
-		PlayerPrefs.SetFloat("Q16", scr16.value);
+		PlayerPrefs.SetString("Q16", scr16.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant17(){
-		PlayerPrefs.SetFloat("Q17", scr17.value);
+		PlayerPrefs.SetString("Q17", scr17.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 	public void suivant18(){
-		PlayerPrefs.SetFloat("Q18", scr18.value);
+		PlayerPrefs.SetString("Q18", scr18.value.ToString("G", CultureInfo.InvariantCulture));
 		PlayerPrefs.Save();
 	}
 

@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
             if (timeRemaining > 0)
             {
                 if (!GameManager.gameIsPaused) {
-                    timeRemaining -= Time.deltaTime; 
+                    timeRemaining -= Time.deltaTime;
                 }
                 DisplayTime(timeRemaining);
             }
