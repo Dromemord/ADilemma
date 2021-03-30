@@ -11,6 +11,7 @@ public class SpawnScript : MonoBehaviour
     private int numberMushrooms;
     public static string saveListDataChampis;
 
+    public GameObject ParentGameObject;
     // Start is called before the first frame update
     	void Start()
     	{
@@ -37,7 +38,9 @@ public class SpawnScript : MonoBehaviour
 
 						Vector3 position = new Vector3(TreeInstances[j].position.x * width, TreeInstances[j].position.y*y, TreeInstances[j].position.z * height);
                         saveListDataChampis += JsonUtility.ToJson(position) + ","  ;
-						Instantiate(myPrefab, position+Terrain.activeTerrains[i].GetPosition(), Quaternion.identity);
+
+                        GameObject obj = Instantiate(myPrefab, position+Terrain.activeTerrains[i].GetPosition(), Quaternion.identity) as GameObject;
+                        obj.transform.parent = ParentGameObject.transform;
 					}
 				}
 			}

@@ -12,6 +12,7 @@ public static class SaveSystem
         Debug.Log(PlayerPrefs.GetString("Player Name"));
         string saveListData = SpawnScript.saveListDataChampis.Remove(SpawnScript.saveListDataChampis.Length - 1) + "],"
                             + Player.saveListData.Remove(Player.saveListData.Length - 1) + "],"
+                            + FieldOfView.saveListDataChampisInView.Remove(FieldOfView.saveListDataChampisInView.Length -1) + "],"
                             + ItemCounter.saveListData.Remove(ItemCounter.saveListData.Length - 1) + "],"
                             + "\"Nom\":[\"" + PlayerPrefs.GetString("Player Name") + "\"],"
                             + "\"Nb champignons\":[" + PlayerPrefs.GetInt("Number Mushroom") + "],"

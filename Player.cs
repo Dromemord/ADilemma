@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public float gravity = -9.81f;
     Vector3 velocity;
     private CharacterController characterController;
-    Camera cam;
+    public Camera cam;
 
     private float x;
     private float z;
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
             {
 
 
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                Ray ray = cam.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit, 100))
@@ -96,17 +96,16 @@ public class Player : MonoBehaviour
                     RemoveFocus();
                 }
             }
-
-	    bTmp = (PlayerPrefs.GetInt("Right Click") == 1);
+	        bTmp = (PlayerPrefs.GetInt("Right Click") == 1);
 
             if (rightClick || eClick || (bTmp && leftClick))
             {
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                Ray ray1 = cam.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2 ));
                 RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit, 100))
+                if (Physics.Raycast(ray1, out hit, 100))
                 {
                     Interactable interactable = hit.collider.GetComponent<Interactable>();
+                    Debug.Log(hit.collider);
                     if (interactable != null)
                     {
                         SetFocus(interactable);
