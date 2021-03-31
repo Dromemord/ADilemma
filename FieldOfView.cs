@@ -19,7 +19,7 @@ public class FieldOfView : MonoBehaviour
     {
         if (!GameManager.gameIsPaused)
         {
-            test = "{";
+            test = "[";
 
             foreach(Transform child in ParentGameObject.transform)
             {
@@ -29,10 +29,10 @@ public class FieldOfView : MonoBehaviour
                 }
             }
 
-            if(test == "{"){
-                saveListDataChampisInView += "{},";
+            if(test == "["){
+                saveListDataChampisInView += "[],";
             }else{
-                saveListDataChampisInView += test.Remove(test.Length - 1) + "},";
+                saveListDataChampisInView += test.Remove(test.Length - 1) + "],";
             }
         }
     }
